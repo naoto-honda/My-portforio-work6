@@ -188,7 +188,7 @@ body {
 }
 
 .mv {
-  background-image: url(/img/mv_img.png);
+  background-image: url(https://naoto-honda.github.io/My-portforio-work6/img/mv_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -198,7 +198,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .mv {
-    background-image: url(/img/mv_img-sp.png);
+    background-image: url(https://naoto-honda.github.io/My-portforio-work6/img/mv_img-sp.png);
     padding-top: 94.6667%;
   }
 }
