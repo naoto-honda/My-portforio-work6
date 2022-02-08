@@ -1,0 +1,12 @@
+.common-text {
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  line-height: 1.96;
+  @include mq(md) {
+    font-size: 24px;
+  }
+  
+  @include mq(sm) {
+    font-size: 16px;
+  }
+}

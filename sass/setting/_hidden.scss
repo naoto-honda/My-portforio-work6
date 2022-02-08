@@ -1,0 +1,13 @@
+.pc {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

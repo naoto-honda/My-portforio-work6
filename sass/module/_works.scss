@@ -1,0 +1,122 @@
+.works {
+  padding-top: 118px;
+
+  .works__head {
+    text-align: center;
+  }
+
+  .works__cards {
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mq(md) {
+      display: block;
+    }
+
+    .works__card {
+      width: calc(50% - 119px / 2);
+      @include mq(md) {
+        max-width: 590px;
+        width: 100%;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 119px;
+        @include mq(md) {
+          margin-right: auto;
+        }
+      }
+
+      &:nth-child(even) {
+        @include mq(md) {
+          margin-left: auto;
+        }
+      }
+
+      &:nth-of-type(2) {
+        margin-top: 128px;
+        @include mq(md) {
+          margin-top: 115px;
+        }
+
+        .works__card-img {
+          @include mq(md) {
+            width: 100%;
+            position: relative;
+          }
+
+          &::before {
+            @include mq(md) {
+              content: "";
+              display: block;
+              padding-top: 132.2033%;//高さ/幅*100//
+            }
+          }
+
+          img {
+            @include mq(md) {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              object-position: center;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        margin-top: -211px;
+        @include mq(md) {
+          margin-top: 100px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        margin-top: 123px;
+      }
+
+      .works__card-img {
+        width: 100%;
+      }
+
+      .works__card-body {
+        margin-top: 37px;
+
+        .works__card-title {
+          font-size: 30px;
+          letter-spacing: 0.02em;
+          font-family: $sub-font;
+          font-weight: 600;
+          @include mq(md) {
+            font-size: 46px;
+          }
+
+          @include mq(sm) {
+            font-size: 30px;
+          }
+        }
+
+        .works__card-text {
+          margin-top: 11px;
+          font-size: 16px;
+          color: #000;
+          letter-spacing: 0.08em;
+          line-height: 1.99;
+          font-weight: 300;
+          @include mq(md) {
+            font-size: 24px;
+          }
+
+          @include mq(sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

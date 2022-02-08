@@ -1,0 +1,42 @@
+.mv {
+  background-image: url(/img/mv_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 48.4375%;
+  position: relative;
+  @include mq(md) {
+    background-image: url(/img/mv_img-sp.png);
+    padding-top: 94.6667%;
+  }
+
+  .mv__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mq(sm) {
+      top: 60%;
+    }
+
+    .mv__title {
+      max-width: 317px;
+      width: 100%;
+      @include mq(md) {
+        max-width: 200px;
+      }
+    }
+  
+    .mv__sub-title {
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-align: center;
+      margin-top: 47px;
+      @include mq(md) {
+        font-size: 16px;
+      }
+    }
+  }
+
+}

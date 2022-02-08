@@ -1,0 +1,49 @@
+.florist {
+  padding-top: 118px;
+  margin-top: 118px;
+  background: linear-gradient(180deg, #ededed 0%, #ededed 58%, #fff 58%, #fff 100%);
+  @include mq(md) {
+    background: linear-gradient(180deg, #ededed 0%, #ededed 25%, #fff 25%, #fff 100%);
+  }
+
+  .florist__cards {
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    @include mq(md) {
+      flex-direction: column;
+    }
+
+    .florist__card {
+      width: 30%;
+      margin: 0 15px;
+      @include mq(md) {
+        width: 100%;
+        margin: 20px auto 40px;
+      }
+
+      .florist__card-body {
+        margin-top: 30px;
+
+        .florist__card-title {
+          font-size: 30px;
+          letter-spacing: 0.02em;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          @include mq(md) {
+            font-size: 24px;
+          }
+        }
+
+        .florist__card-text {
+          margin-top: 17px;
+          font-size: 16px;
+          color: #000;
+          letter-spacing: 0.08em;
+          line-height: 1.99;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
