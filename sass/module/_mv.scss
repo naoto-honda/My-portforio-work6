@@ -1,12 +1,12 @@
 .mv {
-  background-image: url(/img/mv_img.png);
+  background-image: url(https://naoto-honda.github.io/My-portforio-work6/img/mv_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 48.4375%;
   position: relative;
   @include mq(md) {
-    background-image: url(/img/mv_img-sp.png);
+    background-image: url(https://naoto-honda.github.io/My-portforio-work6/img/mv_img-sp.png);
     padding-top: 94.6667%;
   }
 
